@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кинотеатр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Бронирование билетов</h1>
+
+        <div class="date-picker">
+            <label for="date">Дата:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div class="time-picker">
+            <label for="time">Время:</label>
+            <select id="time" name="time">
+                <option value="10:00">10:00</option>
+                <option value="12:00">12:00</option>
+                <option value="14:00">14:00</option>
+                <option value="16:00">16:00</option>
+                <option value="18:00">18:00</option>
+                <option value="20:00">20:00</option>
+            </select>
+        </div>
+
+        <div class="seats-container">
+            <div class="screen">Экран</div>
+            <div class="seats">
+            </div>
+        </div>
+
+        <div class="booking-info">
+            <p>Выбранные места: <span id="selected-seats"></span></p>
+            <button id="book-button">Забронировать</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
